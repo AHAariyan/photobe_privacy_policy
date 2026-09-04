@@ -3,7 +3,7 @@
 The privacy policy for **Photobe** (`com.aariyan.photoeditor`), published on Google Play by
 Agonized Soul.
 
-Live at: **https://ahaariyan.github.io/photobe_privacy_policy/**
+Live at: **https://photobe.privacypolicy.matrabhed.com/**
 
 That URL is the one to paste into:
 
@@ -16,12 +16,17 @@ That URL is the one to paste into:
 |---|---|
 | `index.html` | The policy itself. Self-contained — no build step, no dependencies, no external requests. |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is rather than running Jekyll. |
+| `CNAME` | Written by GitHub when the custom domain is set. Change it in Settings → Pages, not by hand. |
 
-## Enabling GitHub Pages
+## Hosting
 
-Repository → **Settings → Pages** → Source: **Deploy from a branch** → Branch: `main`, folder `/ (root)` → Save.
+Served by GitHub Pages from `main` at the repository root, on the custom domain above.
 
-The site is live a minute or two later.
+Set the domain in **Settings → Pages → Custom domain** rather than committing a `CNAME` by hand —
+doing both leaves two sources of truth that drift.
+
+**Enforce HTTPS must stay ticked.** Play fetches this URL during review, and a certificate warning
+or a plain-HTTP response reads as an inaccessible privacy policy.
 
 ## Keeping it accurate
 
