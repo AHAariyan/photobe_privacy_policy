@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Photobe</title>
+<meta name="description" content="Privacy policy for Photobe, an Android photo editor that processes your photos entirely on your device.">
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1b1b1f; --muted:#5c5f66; --rule:#e3e4e8;
+    --accent:#c2185b; --accent-soft:#fdf2f6; --code-bg:#f4f4f6;
+    --max:44rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#131316; --fg:#e8e8ea; --muted:#a0a2a9; --rule:#2b2c31;
+      --accent:#f06292; --accent-soft:#241a1e; --code-bg:#1d1e22;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding:0 1.25rem 5rem;
+  }
+  .wrap{max-width:var(--max); margin:0 auto}
+  header{padding:3.5rem 0 2rem; border-bottom:1px solid var(--rule); margin-bottom:2.5rem}
+  h1{font-size:2rem; line-height:1.2; margin:0 0 .5rem; letter-spacing:-.02em}
+  .sub{color:var(--muted); margin:0; font-size:.95rem}
+  h2{font-size:1.25rem; margin:2.75rem 0 .75rem; letter-spacing:-.01em; scroll-margin-top:1rem}
+  h3{font-size:1rem; margin:1.75rem 0 .5rem}
+  p,li{color:var(--fg)}
+  a{color:var(--accent)}
+  .lede{
+    background:var(--accent-soft); border-left:3px solid var(--accent);
+    padding:1rem 1.25rem; border-radius:0 6px 6px 0; margin:0 0 1rem;
+  }
+  .lede p{margin:.4rem 0}
+  .lede p:first-child{margin-top:0} .lede p:last-child{margin-bottom:0}
+  table{width:100%; border-collapse:collapse; margin:1rem 0; font-size:.93rem; display:block; overflow-x:auto}
+  th,td{text-align:left; padding:.6rem .75rem; border-bottom:1px solid var(--rule); vertical-align:top}
+  th{font-weight:600; color:var(--muted); font-size:.82rem; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap}
+  code{background:var(--code-bg); padding:.12em .4em; border-radius:4px; font-size:.88em;
+       font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  ul{padding-left:1.25rem} li{margin:.35rem 0}
+  footer{margin-top:4rem; padding-top:1.5rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Photobe &middot; <code>com.aariyan.photoeditor</code><br>
+  Effective 4 September 2026 &middot; Last updated 4 September 2026</p>
+</header>
+
+<div class="lede">
+  <p><strong>The short version.</strong> Photobe edits your photos entirely on your phone. Your
+  photos and the edits you make to them are never uploaded to us or to anyone else, and they are
+  never used to train anything.</p>
+  <p>What we do collect is anonymous usage and crash information, so we can tell which tools people
+  use and fix the app when it breaks. There are no adverts in Photobe, and we do not sell or share
+  your data.</p>
+</div>
+
+<h2 id="who-we-are">1. Who we are</h2>
+<p>Photobe is published on Google Play by <strong>Agonized Soul</strong> ("we", "us"). This policy
+covers the Photobe Android application, package name <code>com.aariyan.photoeditor</code>, and
+nothing else.</p>
+<p>For any question about this policy, or to make a request about your data, email
+<a href="mailto:abdulhady.aariyan@gmail.com">abdulhady.aariyan@gmail.com</a>.</p>
+
+<h2 id="your-photos">2. Your photos</h2>
+<p>This is the part most people want answered, so it comes first.</p>
+<ul>
+  <li>Every edit &mdash; background removal, blur, retouching, filters, text, collage, and all the
+    rest &mdash; is computed <strong>on your device</strong>.</li>
+  <li>Your photos are <strong>not uploaded</strong> to our servers. We do not operate servers that
+    receive images.</li>
+  <li>Your photos are <strong>not sent to any third party</strong>, and are
+    <strong>not used to train any model</strong>, ours or anyone else's.</li>
+  <li>The background-removal and face-detection models run locally. The subject-segmentation and
+    face-detection models are delivered to your device once by Google Play services; the
+    multi-class segmentation model ships inside the app. After delivery, all of them run with no
+    network connection at all.</li>
+  <li>Photobe reads a photo only when you choose it, and writes a photo only when you export one.
+    Files you save stay in your device's storage under your control.</li>
+</ul>
+<p>Photobe stores a small amount of information about your projects in a database on your device so
+you can return to your work. That database never leaves your phone and is deleted when you
+uninstall the app.</p>
+
+<h2 id="what-we-collect">3. What we collect</h2>
+<p>Photobe uses Google Firebase to understand how the app is used and to find crashes. The
+following is the complete list.</p>
+
+<table>
+  <thead><tr><th>What</th><th>Why</th><th>Collected by</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>App interactions</strong> &mdash; which screens you open, which editing tool you
+      open and apply, whether an export succeeded or failed, whether onboarding was completed</td>
+      <td>To see which tools people actually use, and where the app is confusing or failing</td>
+      <td>Firebase Analytics</td>
+    </tr>
+    <tr>
+      <td><strong>Crash logs and diagnostics</strong> &mdash; stack traces, the app version, the
+      Android version, the device model, and the state of the device when a crash happened</td>
+      <td>To find and fix crashes</td>
+      <td>Firebase Crashlytics</td>
+    </tr>
+    <tr>
+      <td><strong>A device identifier</strong> &mdash; a randomly generated app-instance ID created
+      by Firebase for this installation of Photobe</td>
+      <td>To count sessions and users without knowing who you are</td>
+      <td>Firebase</td>
+    </tr>
+    <tr>
+      <td><strong>Purchase events</strong> &mdash; the product identifier, amount and currency of a
+      subscription or donation you complete, and whether a purchase was started, cancelled or
+      failed</td>
+      <td>To understand which options people choose and where the purchase flow breaks</td>
+      <td>Firebase Analytics</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These events carry only the categories of information listed above &mdash; for example the
+<em>name</em> of a tool such as "blur", or a size band such as "large". They never carry your
+photos, filenames, or the contents of anything you edit.</p>
+
+<h2 id="what-we-dont">4. What we do not collect</h2>
+<ul>
+  <li><strong>Your photos or videos.</strong></li>
+  <li><strong>Your name, email address, phone number, or any account.</strong> Photobe has no sign-in.</li>
+  <li><strong>Your advertising ID.</strong> Photobe contains no advertising, no ad networks, and no
+    attribution SDKs, and it does not read the Android advertising identifier.</li>
+  <li><strong>Your location.</strong></li>
+  <li><strong>Your contacts, messages, calendar, call logs, health data, or microphone.</strong></li>
+  <li><strong>Files other than the photo you explicitly choose.</strong></li>
+</ul>
+<p>We do not sell your data, and we do not share it with third parties for advertising or any other
+purpose.</p>
+
+<h2 id="third-parties">5. Third-party services</h2>
+<p>Photobe relies on the following Google services. Each is governed by Google's own privacy
+policy, at <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.</p>
+<ul>
+  <li><strong>Firebase Analytics</strong> &mdash; the usage events described in section 3.</li>
+  <li><strong>Firebase Crashlytics</strong> &mdash; crash reports and diagnostics.</li>
+  <li><strong>Google Play Billing</strong> &mdash; handles subscriptions and donations. Your payment
+    details go to Google, never to us. We receive only whether a purchase is active.</li>
+  <li><strong>Google Play services (ML Kit)</strong> &mdash; delivers the subject-segmentation and
+    face-detection models to your device. Your photos are not sent anywhere as part of this; only
+    the models travel, and they travel towards you.</li>
+  <li><strong>Google Play In-App Updates</strong> &mdash; checks whether a newer version of Photobe
+    is available.</li>
+</ul>
+
+<h2 id="permissions">6. Permissions</h2>
+<table>
+  <thead><tr><th>Permission</th><th>What it is for</th></tr></thead>
+  <tbody>
+    <tr><td><code>INTERNET</code></td><td>Sending analytics and crash reports, delivering the on-device models, and Play Billing</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Checking whether a connection exists before attempting the above</td></tr>
+    <tr><td><code>WAKE_LOCK</code></td><td>Keeping a long export or model download from being interrupted</td></tr>
+  </tbody>
+</table>
+<p>Photobe uses the Android photo picker, so it does not request broad access to your photo library.
+It receives only the single image you select.</p>
+
+<h2 id="legal-basis">7. Legal basis for processing (EEA and UK)</h2>
+<p>If you are in the European Economic Area or the United Kingdom, we process the data in section 3
+on the basis of our <strong>legitimate interest</strong> (Article 6(1)(f) GDPR) in keeping Photobe
+working and in understanding which features are worth maintaining. That interest is balanced
+against your privacy by collecting no personal identifiers and no content. For purchases, the legal
+basis is <strong>performance of a contract</strong> (Article 6(1)(b)).</p>
+
+<h2 id="your-rights">8. Your rights, and how to delete your data</h2>
+<p>You may ask us to confirm what data relating to your installation we hold, to provide a copy of
+it, to correct it, or to delete it. You may also object to our processing it.</p>
+<p>To make any of these requests, email
+<a href="mailto:abdulhady.aariyan@gmail.com">abdulhady.aariyan@gmail.com</a> with the subject line
+<strong>"Data request"</strong>. We will respond within 30 days. Because we hold no account and no
+name, please tell us the approximate dates you used the app and your device model so we can locate
+the records.</p>
+<p>You can also delete everything held on your device, at any time and without asking us, by
+uninstalling Photobe. That removes your projects, your settings, and the local Firebase identifier.
+Once that identifier is gone, no future data can be linked to your past use.</p>
+
+<h2 id="retention">9. How long we keep it</h2>
+<ul>
+  <li><strong>Analytics events</strong> &mdash; retained for up to 14 months, then deleted automatically by Google.</li>
+  <li><strong>Crash reports</strong> &mdash; retained for up to 90 days.</li>
+  <li><strong>Anything on your device</strong> &mdash; kept until you delete the project or uninstall the app.</li>
+</ul>
+
+<h2 id="children">10. Children</h2>
+<p>Photobe is not directed to children under 13, and we do not knowingly collect data from them. If
+you believe a child has used the app and you want the associated records removed, email us and we
+will delete them.</p>
+
+<h2 id="security">11. Security</h2>
+<p>All data described in section 3 is encrypted in transit using HTTPS. Because your photos never
+leave your device, they are protected by your device's own security &mdash; your screen lock and
+Android's storage encryption.</p>
+
+<h2 id="transfers">12. International transfers</h2>
+<p>Firebase processes the data in section 3 on Google's infrastructure, which may be located outside
+your country, including in the United States. Google applies the European Commission's Standard
+Contractual Clauses to those transfers.</p>
+
+<h2 id="changes">13. Changes to this policy</h2>
+<p>If we change what Photobe collects, we will update this page and change the "Last updated" date
+at the top. Material changes will also be described in the app's release notes on Google Play.</p>
+
+<h2 id="contact">14. Contact</h2>
+<p><strong>Agonized Soul</strong><br>
+<a href="mailto:abdulhady.aariyan@gmail.com">abdulhady.aariyan@gmail.com</a></p>
+<p>A person reads it.</p>
+
+<footer>
+  <p>Photobe &mdash; <code>com.aariyan.photoeditor</code> &middot; Effective 4 September 2026</p>
+</footer>
+
+</div>
+</body>
+</html>
